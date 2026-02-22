@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, JetBrains_Mono } from "next/font/google";
-import { Providers } from "./providers";
-import { Navbar } from "@/components/Navbar";
+import { ClientLayout } from "./client-layout";
 import "./globals.css";
 
 const pressStart2P = Press_Start_2P({
@@ -16,6 +15,8 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   display: "swap",
 });
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "HtsBots Arena | PvP Bot Battler on Base",
@@ -40,12 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${pressStart2P.variable} ${jetbrainsMono.variable}`}>
       <body className="min-h-screen bg-arena-darker text-gray-200 antialiased">
-        <Providers>
-          <div className="relative min-h-screen grid-bg">
-            <Navbar />
-            <main>{children}</main>
-          </div>
-        </Providers>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

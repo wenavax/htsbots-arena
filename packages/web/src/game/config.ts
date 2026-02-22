@@ -4,7 +4,7 @@
  * 800x600 pixel-art-style canvas with dark background.
  * Scenes are registered in boot order.
  */
-import Phaser from "phaser";
+import * as Phaser from "phaser";
 import { BootScene } from "./scenes/BootScene";
 import { BattleScene } from "./scenes/BattleScene";
 import { VictoryScene } from "./scenes/VictoryScene";

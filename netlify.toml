@@ -1,6 +1,6 @@
 [build]
-  base = "packages/web"
-  command = "cd ../.. && npm install && npm run build -- --filter=@htsbots/web"
+  base = "."
+  command = "npm install && npm run build -- --filter=@htsbots/web"
   publish = "packages/web/.next"
 
 [build.environment]

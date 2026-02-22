@@ -4,7 +4,7 @@
  * Two teams of 3 bots each. Turn-based combat with animated attacks,
  * HP bars, damage popups, battle log, and action menu.
  */
-import Phaser from "phaser";
+import * as Phaser from "phaser";
 import {
   BotData,
   BotClass,

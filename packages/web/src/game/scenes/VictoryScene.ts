@@ -3,7 +3,7 @@
  *
  * Post-battle screen showing result, rewards, and navigation buttons.
  */
-import Phaser from "phaser";
+import * as Phaser from "phaser";
 
 const FONT_PIXEL = '"Press Start 2P", monospace';
 

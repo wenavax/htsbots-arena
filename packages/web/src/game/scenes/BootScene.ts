@@ -16,7 +16,7 @@
  *  - shield_fx (20x20, blue outline)
  *  - particle (4x4, white)
  */
-import Phaser from "phaser";
+import * as Phaser from "phaser";
 
 export class BootScene extends Phaser.Scene {
   constructor() {
