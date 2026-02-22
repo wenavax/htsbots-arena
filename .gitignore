@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+.next/
+out/
+build/
+
+# Turbo
+.turbo/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Expo / React Native
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+ios/Pods/
+
+# Worktrees
+.claude/worktrees/
+
+# Logs
+*.log
+npm-debug.log*
