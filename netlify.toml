@@ -1,0 +1,11 @@
+[build]
+  base = "packages/web"
+  command = "cd ../.. && npm install && npm run build -- --filter=@htsbots/web"
+  publish = "packages/web/.next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID = "demo"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
